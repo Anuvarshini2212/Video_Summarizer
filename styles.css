@@ -1,0 +1,102 @@
+/* Define theme variables */
+:root {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --input-background: #1e1e1e;
+    --input-border: #333333;
+    --button-background: #007bff;
+    --button-hover: #0056b3;
+    --box-shadow-color: rgba(0, 0, 0, 0.2);
+    --border-radius: 10px;
+}
+
+.light-theme {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --input-background: #f9f9f9;
+    --input-border: #cccccc;
+    --button-background: #007bff;
+    --button-hover: #0056b3;
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 25px;
+    background: var(--input-background);
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px 10px var(--box-shadow-color);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.theme-toggle {
+    background-color: var(--button-background);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+}
+
+.theme-toggle:hover {
+    background-color: var(--button-hover);
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: calc(100% - 40px);
+    padding: 12px;
+    font-size: 16px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--input-border);
+}
+
+.error {
+    display: block;
+}
+
+textarea {
+    width: 100%; /* Adjust this to your desired width */
+    height: 300px; /* Adjust this to your desired height */
+    font-size: 16px;
+    padding: 10px;
+    box-sizing: border-box; /* Ensures padding is included in dimensions */
+    resize: none; /* Optional: Prevent resizing by the user */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 10px;
+}

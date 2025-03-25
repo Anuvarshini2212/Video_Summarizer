@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Summariser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>YouTube Video Summariser</h1>
+            <button id="themeToggle" class="theme-toggle">Switch to Light Theme</button>
+        </header>
+        <p>Enter a valid YouTube URL to get a summary of the video.</p>
+        <div class="form-group">
+            <input type="text" id="youtubeUrl" placeholder="Enter YouTube URL" />
+            <span id="error-message" class="error"></span>
+        </div>
+        <button onclick="summarizeVideo()">Summarise</button>
+        <textarea id="summaryOutput" readonly placeholder="Summary will appear here...
+         "></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
